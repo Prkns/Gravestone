@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_Small R2
+L Gravestone-rescue:R_Small-Device R2
 U 1 1 5F466C25
 P 5650 1525
 F 0 "R2" V 5550 1425 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "~" H 5650 1525 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C7
+L Gravestone-rescue:C_Small-Device C7
 U 1 1 5F46A94B
 P 2150 2700
 F 0 "C7" H 2242 2746 50  0000 L CNN
@@ -51,7 +51,7 @@ $EndComp
 Wire Wire Line
 	2150 2800 2150 2900
 $Comp
-L Device:Crystal_GND24_Small Y1
+L Gravestone-rescue:Crystal_GND24_Small-Device Y1
 U 1 1 5F4740EB
 P 1900 1850
 F 0 "Y1" V 1854 1994 50  0000 L CNN
@@ -66,7 +66,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 1950 2500 1950
 $Comp
-L Device:C_Small C1
+L Gravestone-rescue:C_Small-Device C1
 U 1 1 5F47A0E6
 P 1600 1650
 F 0 "C1" V 1371 1650 50  0000 C CNN
@@ -77,7 +77,7 @@ F 3 "~" H 1600 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C2
+L Gravestone-rescue:C_Small-Device C2
 U 1 1 5F47B088
 P 1600 2050
 F 0 "C2" V 1371 2050 50  0000 C CNN
@@ -124,7 +124,7 @@ Wire Wire Line
 Connection ~ 1800 2150
 Connection ~ 1500 2150
 $Comp
-L Switch:SW_Push SW1
+L Gravestone-rescue:SW_Push-Switch SW1
 U 1 1 5F480596
 P 2100 1550
 F 0 "SW1" H 2100 1835 50  0000 C CNN
@@ -146,7 +146,7 @@ F 3 "" H 1800 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R1
+L Gravestone-rescue:R_Small-Device R1
 U 1 1 5F4821C1
 P 2400 1350
 F 0 "R1" H 2341 1304 50  0000 R CNN
@@ -200,7 +200,7 @@ F 3 "" H 5725 1325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Polyfuse_Small F1
+L Gravestone-rescue:Polyfuse_Small-Device F1
 U 1 1 5F464504
 P 6075 1325
 F 0 "F1" V 5870 1325 50  0000 C CNN
@@ -229,7 +229,7 @@ Connection ~ 5725 1325
 Wire Wire Line
 	5725 1325 5975 1325
 $Comp
-L Device:R_Small R3
+L Gravestone-rescue:R_Small-Device R3
 U 1 1 5F468C9D
 P 5650 1625
 F 0 "R3" V 5750 1525 50  0000 C CNN
@@ -244,7 +244,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 1625 5550 1625
 $Comp
-L Power_Protection:SRV05-4 D1
+L Gravestone-rescue:SRV05-4-Power_Protection D1
 U 1 1 5F46CDD8
 P 7900 1750
 F 0 "D1" V 7854 2294 50  0000 L CNN
@@ -280,7 +280,7 @@ F 3 "" H 6675 3625 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D2
+L Gravestone-rescue:D_Small-Device D2
 U 1 1 5F45B72E
 P 7150 3900
 F 0 "D2" V 7104 3970 50  0000 L CNN
@@ -304,7 +304,7 @@ F 3 "" H 7225 3625 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D3
+L Gravestone-rescue:D_Small-Device D3
 U 1 1 5F45E94F
 P 7700 3900
 F 0 "D3" V 7654 3970 50  0000 L CNN
@@ -328,7 +328,7 @@ F 3 "" H 7775 3625 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D4
+L Gravestone-rescue:D_Small-Device D4
 U 1 1 5F460C2A
 P 8250 3900
 F 0 "D4" V 8204 3970 50  0000 L CNN
@@ -352,7 +352,7 @@ F 3 "" H 6675 4325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D5
+L Gravestone-rescue:D_Small-Device D5
 U 1 1 5F465166
 P 7150 4600
 F 0 "D5" V 7104 4670 50  0000 L CNN
@@ -376,7 +376,7 @@ F 3 "" H 7225 4325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D6
+L Gravestone-rescue:D_Small-Device D6
 U 1 1 5F465173
 P 7700 4600
 F 0 "D6" V 7654 4670 50  0000 L CNN
@@ -400,7 +400,7 @@ F 3 "" H 7775 4325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D7
+L Gravestone-rescue:D_Small-Device D7
 U 1 1 5F465180
 P 8250 4600
 F 0 "D7" V 8204 4670 50  0000 L CNN
@@ -468,7 +468,7 @@ F 3 "" H 2700 4250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
+L Gravestone-rescue:R_Small-Device R7
 U 1 1 5F47354A
 P 4350 3750
 F 0 "R7" V 4450 3800 50  0000 R CNN
@@ -500,7 +500,7 @@ Wire Wire Line
 	5350 4075 5700 4075
 Connection ~ 5350 4075
 $Comp
-L Device:C_Small C6
+L Gravestone-rescue:C_Small-Device C6
 U 1 1 5F46FC63
 P 5700 4175
 F 0 "C6" H 5792 4221 50  0000 L CNN
@@ -511,7 +511,7 @@ F 3 "~" H 5700 4175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C5
+L Gravestone-rescue:C_Small-Device C5
 U 1 1 5F46E053
 P 5350 4175
 F 0 "C5" H 5442 4221 50  0000 L CNN
@@ -522,7 +522,7 @@ F 3 "~" H 5350 4175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L Gravestone-rescue:C_Small-Device C4
 U 1 1 5F46CEE3
 P 4950 4175
 F 0 "C4" H 5042 4221 50  0000 L CNN
@@ -580,7 +580,7 @@ F 3 "" H 3100 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R4
+L Gravestone-rescue:R_Small-Device R4
 U 1 1 5F4686CC
 P 1750 2300
 F 0 "R4" V 1650 2200 50  0000 C CNN
@@ -591,7 +591,7 @@ F 3 "~" H 1750 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R5
+L Gravestone-rescue:R_Small-Device R5
 U 1 1 5F46911B
 P 1750 2400
 F 0 "R5" V 1850 2300 50  0000 C CNN
