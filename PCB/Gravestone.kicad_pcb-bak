@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 8)
     (tracks 0)
     (zones 0)
     (modules 30)
@@ -191,7 +191,7 @@
   )
 
   (module usb-type-c:Mid_Mount-USB_C_HandSoldering (layer F.Cu) (tedit 5BB34977) (tstamp 5F55D769)
-    (at 152.93086 57.36844 90)
+    (at 152.4 71.66864 90)
     (path /5F5657E8)
     (fp_text reference J1 (at -1.27 -7.62 90) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.15)))
@@ -1108,7 +1108,7 @@
     (pad "" np_thru_hole circle (at 5.08 0 228.0996) (size 1.75 1.75) (drill 1.75) (layers *.Cu *.Mask))
   )
 
-  (module MX_Only:MXOnly-1U-NoLED (layer F.Cu) (tedit 5BD3C6C7) (tstamp 5F46F360)
+  (module MX_Only:MXOnly-1U-NoLED (layer F.Cu) (tedit 5BD3C6C7) (tstamp 5F55DE29)
     (at 152.4 88.9 180)
     (path /5F45E949)
     (fp_text reference MX2 (at 0 3.175) (layer Dwgs.User)
@@ -1554,9 +1554,12 @@
       (net 1 +5V))
   )
 
+  (gr_line (start 182.43511 77.96403) (end 160.02 77.96403) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 160.02 71.66864) (end 160.02 77.96403) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 144.78 71.66864) (end 144.78 77.96276) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 147.07362 77.9653) (end 147.07362 72.06234) (layer Dwgs.User) (width 0.15))
   (gr_line (start 182.43955 117.96395) (end 182.43511 77.96403) (layer Edge.Cuts) (width 0.2) (tstamp 5F46E4E4))
-  (gr_line (start 122.43943 77.96395) (end 182.43511 77.96403) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 122.43943 77.96395) (end 144.78 77.96276) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 122.43955 117.96395) (end 122.43943 77.96395) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 182.43955 117.96395) (end 122.43955 117.96395) (layer Edge.Cuts) (width 0.2))
 
