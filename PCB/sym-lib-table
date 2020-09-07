@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name Gravestone-rescue)(type Legacy)(uri ${KIPRJMOD}/Gravestone-rescue.lib)(options "")(descr ""))
+  (lib (name keebio)(type Legacy)(uri ${KIPRJMOD}/keebio-components/keebio.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri C:/Users/ZEUS-NOTE/Documents/GitHub/alice-split-60/Trifecta/Hardware/Rev0.5rgb/Type-C.pretty/Type-C.lib)(options "")(descr ""))
+  (lib (name usb-type-c)(type Legacy)(uri ${KIPRJMOD}/Schematic_Library/usb-type-c.lib)(options "")(descr ""))
 )

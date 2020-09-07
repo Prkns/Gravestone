@@ -14,23 +14,23 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_Small R2
+L Gravestone-rescue:R_Small-Device R2
 U 1 1 5F466C25
-P 6050 1650
-F 0 "R2" V 5950 1550 50  0000 C CNN
-F 1 "5.1k" V 5950 1750 50  0000 C CNN
-F 2 "Keebio-Parts:R_0805" H 6050 1650 50  0001 C CNN
-F 3 "~" H 6050 1650 50  0001 C CNN
-	1    6050 1650
+P 5650 1525
+F 0 "R2" V 5550 1425 50  0000 C CNN
+F 1 "5.1k" V 5550 1625 50  0000 C CNN
+F 2 "Keebio-Parts:R_0603" H 5650 1525 50  0001 C CNN
+F 3 "~" H 5650 1525 50  0001 C CNN
+	1    5650 1525
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C7
+L Gravestone-rescue:C_Small-Device C7
 U 1 1 5F46A94B
 P 2150 2700
 F 0 "C7" H 2242 2746 50  0000 L CNN
 F 1 "1uF" H 2242 2655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2150 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2150 2700 50  0001 C CNN
 F 3 "~" H 2150 2700 50  0001 C CNN
 	1    2150 2700
 	1    0    0    -1  
@@ -51,7 +51,7 @@ $EndComp
 Wire Wire Line
 	2150 2800 2150 2900
 $Comp
-L Device:Crystal_GND24_Small Y1
+L Gravestone-rescue:Crystal_GND24_Small-Device Y1
 U 1 1 5F4740EB
 P 1900 1850
 F 0 "Y1" V 1854 1994 50  0000 L CNN
@@ -66,23 +66,23 @@ Wire Wire Line
 Wire Wire Line
 	1900 1950 2500 1950
 $Comp
-L Device:C_Small C1
+L Gravestone-rescue:C_Small-Device C1
 U 1 1 5F47A0E6
 P 1600 1650
 F 0 "C1" V 1371 1650 50  0000 C CNN
 F 1 "22pF" V 1462 1650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 1650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1600 1650 50  0001 C CNN
 F 3 "~" H 1600 1650 50  0001 C CNN
 	1    1600 1650
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C2
+L Gravestone-rescue:C_Small-Device C2
 U 1 1 5F47B088
 P 1600 2050
 F 0 "C2" V 1371 2050 50  0000 C CNN
 F 1 "22pF" V 1462 2050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1600 2050 50  0001 C CNN
 F 3 "~" H 1600 2050 50  0001 C CNN
 	1    1600 2050
 	0    1    1    0   
@@ -124,7 +124,7 @@ Wire Wire Line
 Connection ~ 1800 2150
 Connection ~ 1500 2150
 $Comp
-L Switch:SW_Push SW1
+L Gravestone-rescue:SW_Push-Switch SW1
 U 1 1 5F480596
 P 2100 1550
 F 0 "SW1" H 2100 1835 50  0000 C CNN
@@ -146,12 +146,12 @@ F 3 "" H 1800 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R1
+L Gravestone-rescue:R_Small-Device R1
 U 1 1 5F4821C1
 P 2400 1350
 F 0 "R1" H 2341 1304 50  0000 R CNN
 F 1 "10k" H 2341 1395 50  0000 R CNN
-F 2 "Keebio-Parts:R_0805" H 2400 1350 50  0001 C CNN
+F 2 "Keebio-Parts:R_0603" H 2400 1350 50  0001 C CNN
 F 3 "~" H 2400 1350 50  0001 C CNN
 	1    2400 1350
 	-1   0    0    1   
@@ -178,84 +178,73 @@ $EndComp
 Wire Wire Line
 	2400 1250 2400 1150
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 5F45EACB
-P 5100 2050
-F 0 "J1" H 5207 2917 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 5207 2826 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 5250 2050 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5250 2050 50  0001 C CNN
-	1    5100 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0111
 U 1 1 5F461E03
-P 4950 3000
-F 0 "#PWR0111" H 4950 3050 20  0001 C CNN
-F 1 "GND" H 4950 2900 30  0000 C CNN
-F 2 "" H 4950 3000 60  0000 C CNN
-F 3 "" H 4950 3000 60  0000 C CNN
-	1    4950 3000
+P 4800 2675
+F 0 "#PWR0111" H 4800 2725 20  0001 C CNN
+F 1 "GND" H 4800 2575 30  0000 C CNN
+F 2 "" H 4800 2675 60  0000 C CNN
+F 3 "" H 4800 2675 60  0000 C CNN
+	1    4800 2675
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0112
 U 1 1 5F46330E
-P 5950 1450
-F 0 "#PWR0112" H 5950 1300 50  0001 C CNN
-F 1 "VCC" H 5967 1623 50  0000 C CNN
-F 2 "" H 5950 1450 50  0001 C CNN
-F 3 "" H 5950 1450 50  0001 C CNN
-	1    5950 1450
+P 5725 1325
+F 0 "#PWR0112" H 5725 1175 50  0001 C CNN
+F 1 "VCC" H 5742 1498 50  0000 C CNN
+F 2 "" H 5725 1325 50  0001 C CNN
+F 3 "" H 5725 1325 50  0001 C CNN
+	1    5725 1325
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Polyfuse_Small F1
+L Gravestone-rescue:Polyfuse_Small-Device F1
 U 1 1 5F464504
-P 6300 1450
-F 0 "F1" V 6095 1450 50  0000 C CNN
-F 1 "500mA" V 6186 1450 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 6350 1250 50  0001 L CNN
-F 3 "~" H 6300 1450 50  0001 C CNN
-	1    6300 1450
+P 6075 1325
+F 0 "F1" V 5870 1325 50  0000 C CNN
+F 1 "500mA" V 5961 1325 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric" H 6125 1125 50  0001 L CNN
+F 3 "~" H 6075 1325 50  0001 C CNN
+	1    6075 1325
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR0113
 U 1 1 5F465DF5
-P 6650 1450
-F 0 "#PWR0113" H 6650 1300 50  0001 C CNN
-F 1 "+5V" H 6665 1623 50  0000 C CNN
-F 2 "" H 6650 1450 50  0001 C CNN
-F 3 "" H 6650 1450 50  0001 C CNN
-	1    6650 1450
+P 6425 1325
+F 0 "#PWR0113" H 6425 1175 50  0001 C CNN
+F 1 "+5V" H 6440 1498 50  0000 C CNN
+F 2 "" H 6425 1325 50  0001 C CNN
+F 3 "" H 6425 1325 50  0001 C CNN
+	1    6425 1325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 1450 5950 1450
+	5475 1325 5725 1325
 Wire Wire Line
-	6400 1450 6650 1450
-Connection ~ 5950 1450
+	6175 1325 6425 1325
+Connection ~ 5725 1325
 Wire Wire Line
-	5950 1450 6200 1450
+	5725 1325 5975 1325
 $Comp
-L Device:R_Small R3
+L Gravestone-rescue:R_Small-Device R3
 U 1 1 5F468C9D
-P 6050 1750
-F 0 "R3" V 6150 1650 50  0000 C CNN
-F 1 "5.1k" V 6150 1850 50  0000 C CNN
-F 2 "Keebio-Parts:R_0805" H 6050 1750 50  0001 C CNN
-F 3 "~" H 6050 1750 50  0001 C CNN
-	1    6050 1750
+P 5650 1625
+F 0 "R3" V 5750 1525 50  0000 C CNN
+F 1 "5.1k" V 5750 1725 50  0000 C CNN
+F 2 "Keebio-Parts:R_0603" H 5650 1625 50  0001 C CNN
+F 3 "~" H 5650 1625 50  0001 C CNN
+	1    5650 1625
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5700 1650 5950 1650
+	5300 1525 5550 1525
 Wire Wire Line
-	5700 1750 5950 1750
+	5300 1625 5550 1625
 $Comp
-L Power_Protection:SRV05-4 D1
+L Gravestone-rescue:SRV05-4-Power_Protection D1
 U 1 1 5F46CDD8
 P 7900 1750
 F 0 "D1" V 7854 2294 50  0000 L CNN
@@ -266,23 +255,21 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 7960 175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 1950 5800 1950
+	5300 1775 5400 1775
 Wire Wire Line
-	5800 2050 5700 2050
+	5400 1875 5300 1875
 Wire Wire Line
-	5700 2150 5800 2150
+	5300 1975 5400 1975
 Wire Wire Line
-	5800 2250 5700 2250
-Text GLabel 6250 2000 2    50   Input ~ 0
+	5400 2075 5300 2075
+Text GLabel 5850 1825 2    50   Input ~ 0
 D+
-Text GLabel 6250 2200 2    50   Input ~ 0
+Text GLabel 5850 2025 2    50   Input ~ 0
 D-
-NoConn ~ 5700 2550
-NoConn ~ 5700 2650
-Wire Wire Line
-	5100 2950 5100 3000
+NoConn ~ 5300 2225
+NoConn ~ 5300 2325
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX1
+L Gravestone-rescue:MX-NoLED-MX_Alps_Hybrid MX1
 U 1 1 5F45AD20
 P 7300 3650
 F 0 "MX1" H 7333 3873 60  0000 C CNN
@@ -293,7 +280,7 @@ F 3 "" H 6675 3625 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D2
+L Gravestone-rescue:D_Small-Device D2
 U 1 1 5F45B72E
 P 7150 3900
 F 0 "D2" V 7104 3970 50  0000 L CNN
@@ -306,7 +293,7 @@ $EndComp
 Wire Wire Line
 	7250 3800 7150 3800
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX2
+L Gravestone-rescue:MX-NoLED-MX_Alps_Hybrid MX2
 U 1 1 5F45E949
 P 7850 3650
 F 0 "MX2" H 7883 3873 60  0000 C CNN
@@ -317,7 +304,7 @@ F 3 "" H 7225 3625 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D3
+L Gravestone-rescue:D_Small-Device D3
 U 1 1 5F45E94F
 P 7700 3900
 F 0 "D3" V 7654 3970 50  0000 L CNN
@@ -330,7 +317,7 @@ $EndComp
 Wire Wire Line
 	7800 3800 7700 3800
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX3
+L Gravestone-rescue:MX-NoLED-MX_Alps_Hybrid MX3
 U 1 1 5F460C24
 P 8400 3650
 F 0 "MX3" H 8433 3873 60  0000 C CNN
@@ -341,7 +328,7 @@ F 3 "" H 7775 3625 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D4
+L Gravestone-rescue:D_Small-Device D4
 U 1 1 5F460C2A
 P 8250 3900
 F 0 "D4" V 8204 3970 50  0000 L CNN
@@ -354,7 +341,7 @@ $EndComp
 Wire Wire Line
 	8350 3800 8250 3800
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX4
+L Gravestone-rescue:MX-NoLED-MX_Alps_Hybrid MX4
 U 1 1 5F465160
 P 7300 4350
 F 0 "MX4" H 7333 4573 60  0000 C CNN
@@ -365,7 +352,7 @@ F 3 "" H 6675 4325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D5
+L Gravestone-rescue:D_Small-Device D5
 U 1 1 5F465166
 P 7150 4600
 F 0 "D5" V 7104 4670 50  0000 L CNN
@@ -378,7 +365,7 @@ $EndComp
 Wire Wire Line
 	7250 4500 7150 4500
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX5
+L Gravestone-rescue:MX-NoLED-MX_Alps_Hybrid MX5
 U 1 1 5F46516D
 P 7850 4350
 F 0 "MX5" H 7883 4573 60  0000 C CNN
@@ -389,7 +376,7 @@ F 3 "" H 7225 4325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D6
+L Gravestone-rescue:D_Small-Device D6
 U 1 1 5F465173
 P 7700 4600
 F 0 "D6" V 7654 4670 50  0000 L CNN
@@ -402,7 +389,7 @@ $EndComp
 Wire Wire Line
 	7800 4500 7700 4500
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX6
+L Gravestone-rescue:MX-NoLED-MX_Alps_Hybrid MX6
 U 1 1 5F46517A
 P 8400 4350
 F 0 "MX6" H 8433 4573 60  0000 C CNN
@@ -413,7 +400,7 @@ F 3 "" H 7775 4325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D7
+L Gravestone-rescue:D_Small-Device D7
 U 1 1 5F465180
 P 8250 4600
 F 0 "D7" V 8204 4670 50  0000 L CNN
@@ -481,12 +468,12 @@ F 3 "" H 2700 4250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
+L Gravestone-rescue:R_Small-Device R7
 U 1 1 5F47354A
 P 4350 3750
 F 0 "R7" V 4450 3800 50  0000 R CNN
 F 1 "10k" V 4250 3800 50  0000 R CNN
-F 2 "Keebio-Parts:R_0805" H 4350 3750 50  0001 C CNN
+F 2 "Keebio-Parts:R_0603" H 4350 3750 50  0001 C CNN
 F 3 "~" H 4350 3750 50  0001 C CNN
 	1    4350 3750
 	0    -1   -1   0   
@@ -506,96 +493,65 @@ F 3 "" H 4750 3750 60  0000 C CNN
 	1    4750 3750
 	1    0    0    -1  
 $EndComp
+Connection ~ 5350 4275
 Wire Wire Line
-	5250 4400 5050 4400
-Connection ~ 5250 4400
+	5700 4275 5350 4275
 Wire Wire Line
-	5250 4450 5250 4400
-Wire Wire Line
-	5450 4400 5250 4400
-Connection ~ 5450 4400
-Wire Wire Line
-	5050 4400 4700 4400
-Connection ~ 5050 4400
-Wire Wire Line
-	5800 4400 5450 4400
-Wire Wire Line
-	5450 4200 5800 4200
-Connection ~ 5450 4200
-Connection ~ 5250 4200
-Wire Wire Line
-	5250 4200 5450 4200
-Wire Wire Line
-	5050 4200 4700 4200
-Connection ~ 5050 4200
-Wire Wire Line
-	5250 4200 5050 4200
-Wire Wire Line
-	5250 4150 5250 4200
+	5350 4075 5700 4075
+Connection ~ 5350 4075
 $Comp
-L Device:C_Small C6
+L Gravestone-rescue:C_Small-Device C6
 U 1 1 5F46FC63
-P 5800 4300
-F 0 "C6" H 5892 4346 50  0000 L CNN
-F 1 "10uF" H 5892 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 4300 50  0001 C CNN
-F 3 "~" H 5800 4300 50  0001 C CNN
-	1    5800 4300
+P 5700 4175
+F 0 "C6" H 5792 4221 50  0000 L CNN
+F 1 "4.7uF" H 5792 4130 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5700 4175 50  0001 C CNN
+F 3 "~" H 5700 4175 50  0001 C CNN
+	1    5700 4175
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
-U 1 1 5F46F00E
-P 4700 4300
-F 0 "C3" H 4792 4346 50  0000 L CNN
-F 1 "0.1uF" H 4792 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4700 4300 50  0001 C CNN
-F 3 "~" H 4700 4300 50  0001 C CNN
-	1    4700 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C5
+L Gravestone-rescue:C_Small-Device C5
 U 1 1 5F46E053
-P 5450 4300
-F 0 "C5" H 5542 4346 50  0000 L CNN
-F 1 "0.1uF" H 5542 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 4300 50  0001 C CNN
-F 3 "~" H 5450 4300 50  0001 C CNN
-	1    5450 4300
+P 5350 4175
+F 0 "C5" H 5442 4221 50  0000 L CNN
+F 1 "0.1uF" H 5442 4130 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5350 4175 50  0001 C CNN
+F 3 "~" H 5350 4175 50  0001 C CNN
+	1    5350 4175
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L Gravestone-rescue:C_Small-Device C4
 U 1 1 5F46CEE3
-P 5050 4300
-F 0 "C4" H 5142 4346 50  0000 L CNN
-F 1 "0.1uF" H 5142 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5050 4300 50  0001 C CNN
-F 3 "~" H 5050 4300 50  0001 C CNN
-	1    5050 4300
+P 4950 4175
+F 0 "C4" H 5042 4221 50  0000 L CNN
+F 1 "0.1uF" H 5042 4130 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 4175 50  0001 C CNN
+F 3 "~" H 4950 4175 50  0001 C CNN
+	1    4950 4175
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5F46C9BE
-P 5250 4450
-F 0 "#PWR0106" H 5250 4500 20  0001 C CNN
-F 1 "GND" H 5250 4350 30  0000 C CNN
-F 2 "" H 5250 4450 60  0000 C CNN
-F 3 "" H 5250 4450 60  0000 C CNN
-	1    5250 4450
+P 5350 4275
+F 0 "#PWR0106" H 5350 4325 20  0001 C CNN
+F 1 "GND" H 5350 4175 30  0000 C CNN
+F 2 "" H 5350 4275 60  0000 C CNN
+F 3 "" H 5350 4275 60  0000 C CNN
+	1    5350 4275
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0105
 U 1 1 5F46C3E5
-P 5250 4150
-F 0 "#PWR0105" H 5250 4000 50  0001 C CNN
-F 1 "+5V" H 5265 4323 50  0000 C CNN
-F 2 "" H 5250 4150 50  0001 C CNN
-F 3 "" H 5250 4150 50  0001 C CNN
-	1    5250 4150
+P 5350 4075
+F 0 "#PWR0105" H 5350 3925 50  0001 C CNN
+F 1 "+5V" H 5365 4248 50  0000 C CNN
+F 2 "" H 5350 4075 50  0001 C CNN
+F 3 "" H 5350 4075 50  0001 C CNN
+	1    5350 4075
 	1    0    0    -1  
 $EndComp
 Connection ~ 3200 1150
@@ -624,23 +580,23 @@ F 3 "" H 3100 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R4
+L Gravestone-rescue:R_Small-Device R4
 U 1 1 5F4686CC
 P 1750 2300
 F 0 "R4" V 1650 2200 50  0000 C CNN
 F 1 "22" V 1650 2400 50  0000 C CNN
-F 2 "Keebio-Parts:R_0805" H 1750 2300 50  0001 C CNN
+F 2 "Keebio-Parts:R_0603" H 1750 2300 50  0001 C CNN
 F 3 "~" H 1750 2300 50  0001 C CNN
 	1    1750 2300
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R5
+L Gravestone-rescue:R_Small-Device R5
 U 1 1 5F46911B
 P 1750 2400
 F 0 "R5" V 1850 2300 50  0000 C CNN
 F 1 "22" V 1850 2500 50  0000 C CNN
-F 2 "Keebio-Parts:R_0805" H 1750 2400 50  0001 C CNN
+F 2 "Keebio-Parts:R_0603" H 1750 2400 50  0001 C CNN
 F 3 "~" H 1750 2400 50  0001 C CNN
 	1    1750 2400
 	0    1    1    0   
@@ -662,59 +618,52 @@ Wire Wire Line
 Connection ~ 3100 4150
 Wire Wire Line
 	3100 4150 3200 4150
-Wire Wire Line
-	4800 2950 4800 3000
 $Comp
 L power:GND #PWR0114
 U 1 1 5F56CBA5
-P 6650 1650
-F 0 "#PWR0114" H 6650 1700 20  0001 C CNN
-F 1 "GND" H 6750 1650 30  0000 C CNN
-F 2 "" H 6650 1650 60  0000 C CNN
-F 3 "" H 6650 1650 60  0000 C CNN
-	1    6650 1650
+P 6250 1525
+F 0 "#PWR0114" H 6250 1575 20  0001 C CNN
+F 1 "GND" H 6350 1525 30  0000 C CNN
+F 2 "" H 6250 1525 60  0000 C CNN
+F 3 "" H 6250 1525 60  0000 C CNN
+	1    6250 1525
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 3000 4950 3000
-Connection ~ 4950 3000
-Wire Wire Line
-	4950 3000 5100 3000
-Text GLabel 5800 1450 1    50   Input ~ 0
+Text GLabel 5575 1325 1    50   Input ~ 0
 VBUS
 Wire Wire Line
-	5800 1950 5800 2000
+	5400 1775 5400 1825
 Wire Wire Line
-	5800 2150 5800 2200
+	5400 1975 5400 2025
 $Comp
 L power:GND #PWR0115
 U 1 1 5F48A564
-P 6450 1750
-F 0 "#PWR0115" H 6450 1800 20  0001 C CNN
-F 1 "GND" H 6550 1750 30  0000 C CNN
-F 2 "" H 6450 1750 60  0000 C CNN
-F 3 "" H 6450 1750 60  0000 C CNN
-	1    6450 1750
+P 6050 1625
+F 0 "#PWR0115" H 6050 1675 20  0001 C CNN
+F 1 "GND" H 6150 1625 30  0000 C CNN
+F 2 "" H 6050 1625 60  0000 C CNN
+F 3 "" H 6050 1625 60  0000 C CNN
+	1    6050 1625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 1650 6650 1650
+	5750 1525 6250 1525
 Wire Wire Line
-	6150 1750 6450 1750
-Connection ~ 5800 2000
+	5750 1625 6050 1625
+Connection ~ 5400 1825
 Wire Wire Line
-	5800 2000 5800 2050
-Connection ~ 5800 2200
+	5400 1825 5400 1875
+Connection ~ 5400 2025
 Wire Wire Line
-	5800 2200 5800 2250
-Text GLabel 6150 2200 3    50   Input ~ 0
+	5400 2025 5400 2075
+Text GLabel 5750 2025 3    50   Input ~ 0
 D-ESD
-Text GLabel 6000 2000 3    50   Input ~ 0
+Text GLabel 5600 1825 3    50   Input ~ 0
 D+ESD
 Wire Wire Line
-	5800 2000 6250 2000
+	5400 1825 5850 1825
 Wire Wire Line
-	5800 2200 6250 2200
+	5400 2025 5850 2025
 Text GLabel 7400 1650 0    50   Input ~ 0
 D-ESD
 Text GLabel 7900 1250 1    50   Input ~ 0
@@ -757,4 +706,45 @@ Wire Wire Line
 	2400 2250 2400 2400
 Wire Wire Line
 	1850 2400 2400 2400
+Text GLabel 3900 3050 2    50   Input ~ 0
+COL0
+Text GLabel 3900 3150 2    50   Input ~ 0
+COL1
+Text GLabel 3900 3250 2    50   Input ~ 0
+COL2
+Text GLabel 3900 3350 2    50   Input ~ 0
+ROW0
+Text GLabel 3900 3450 2    50   Input ~ 0
+ROW2
+Wire Wire Line
+	4950 4075 5350 4075
+Wire Wire Line
+	4950 4275 5350 4275
+$Comp
+L usb-type-c:USB2_C_Receptacle J1
+U 1 1 5F5657E8
+P 4900 1825
+F 0 "J1" H 5007 2642 50  0000 C CNN
+F 1 "USB2_C_Receptacle" H 5007 2551 50  0000 C CNN
+F 2 "usb-type-c:Mid_Mount-USB_C_HandSoldering" H 5100 1875 50  0001 C CNN
+F 3 " ~" H 5100 1875 50  0001 C CNN
+	1    4900 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2675 4800 2675
+Connection ~ 4800 2675
+Wire Wire Line
+	4800 2675 4700 2675
+Wire Wire Line
+	4700 2675 4700 2525
+Wire Wire Line
+	5400 1275 5475 1275
+Wire Wire Line
+	5475 1275 5475 1325
+Wire Wire Line
+	5475 1375 5400 1375
+Connection ~ 5475 1325
+Wire Wire Line
+	5475 1325 5475 1375
 $EndSCHEMATC
